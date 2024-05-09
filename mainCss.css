@@ -1,0 +1,484 @@
+html{
+  overflow:hidden;
+  margin: -0.7%;
+}
+/* https://css-tricks.com/using-multi-step-animations-transitions/ */
+
+#body{
+  background: url("ocean animals/desktop-1600x900.jpg");
+           padding: 0%;          
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+}
+
+.bubbles-char{
+  position: absolute;
+}    
+
+.starfish-char{
+  position: absolute;
+  width: 10%;
+  height: 10%; 
+}
+
+.fish-char{
+  position:absolute;
+  width: 20%;
+  height: 15%;
+}
+
+#flatfish-box{
+  top: 65%;
+  left: 70%;
+  
+}
+
+#flatfish{
+  position: absolute;
+  width: 15%;
+}
+
+#goldfish-box{
+  top: 80%;
+  left: 5%
+}
+
+#goldfish{
+  width: 15%;
+}
+
+#codfish-box{
+  left: 20%;
+  top: 10%;
+  transform: rotateY(190deg);
+  
+
+}
+
+#stripefish-box{
+  left: 12%;
+  top: 18%;
+  transform: rotateY(170deg);
+}
+
+#codfish, #stripefish{
+  position: absolute;
+  animation: lol 6s infinite ease-in-out reverse;
+  width: 25%;
+  transform: rotateY(35deg);
+  
+}
+
+#stripefish2-box{
+  top: 30%;
+  left: 40%;
+}
+
+#stripefish2{
+  width:20%
+}
+
+
+#bluefish-box{
+    top:80%;
+    left: 75%;
+}
+#bluefish{
+  width: 12%;
+
+}
+
+#blowfish-box{
+  left: 33%;
+  top: 62%; 
+ 
+}
+/* animation-fill-mode: forwards -- moves elem, to the end of animation */
+#blowfish{
+  
+  animation: lol, spin_starfish 20s 5s infinite, infinite;
+  position: relative;
+  transform: scaleY(.3) ;
+  width: 20%;
+}
+
+
+#blowfish:hover{
+ position: relative;
+  animation: bobbing_blowfish 5s infinite ease-in-out;
+  
+ 
+}
+@keyframes bobbing_blowfish{
+  0%{
+    top: 0%;
+    transform: scaleY(1)
+    }25%{
+      top: 25%;
+transform: rotate(-34deg);
+      }50%{
+        top: 35%;
+        
+        }75%{ 
+          top: 15%;
+
+          }100%{
+            top: 0%;
+
+  }
+
+}
+
+#clam-box{
+  right: 29.5%;
+  top: 93%
+}
+#clam{
+  transform: rotate(330deg);
+  z-index: 1;
+  width: 20%;
+}
+
+
+#starfish-box{
+  left: 90%;
+  top: 35%;
+  position: absolute;
+  
+}
+
+#yellowstarfish{
+  position: relative;
+  animation: spin_starfish 45s infinite backwards ease-in-out;
+  left: 75%;
+  width: 25%;
+  
+}
+#bluestarfish{
+  position: relative;
+  animation: spin_starfish 65s infinite reverse ease-in-out;
+  left: 52%;
+  width: 20%;
+  
+}
+#starfish{
+  position: relative;
+  animation: spin_starfish 65s infinite ease-in-out;
+  width: 20%;
+  left: 10%;
+}
+@keyframes spin_starfish {
+  0%{
+    
+    top: 15%;
+    right: 10%;
+    transform: rotate(0deg)
+  }50%{
+    transform: scaleX(0.5);
+    transform: rotate(-260deg);
+    right: 25%;
+    top: -75%;
+
+  }75%{ transform: scaleX(1.1);
+    
+    transform: rotate(180deg);
+    top: 15%;
+    right: -30%;
+
+  }100%{
+    transform: scaleY(20deg);
+    top: 15%;
+    right: 10%;
+  }
+  
+}
+
+/* #whale-box{
+  right: 20%;
+  top: 20%;
+  
+}
+#whale{} */
+
+/* #coral-box{
+  right:90%;
+  top: 82%
+}
+#coral{}
+
+#coral2-box{
+  right: 17%;
+  top: 74%; 
+}
+#coral2{}
+
+#seaweed-box{
+  right: 10%;
+  top: 90%
+}
+#seaweed{}
+
+
+
+#seaweed2-box{
+  right: 50%;
+  top: 80%
+}
+#seaweed2{}
+ */
+
+
+#clownfish-box{
+  right: 15%;
+  top: 10%;
+}
+.clownfish_mini{
+  position: relative; 
+  animation: lol 8s infinite ease-in-out ;
+  width: 12%;
+}
+
+  .clownfish{
+  position: relative; 
+  animation: lol 11s infinite;
+  animation-timing-function: step-start ease-in-out;
+    width: 20%;
+}
+
+@keyframes lol{
+  0%{ 
+    left: 25%;
+    top: 9px;
+}25%{  
+    transform: rotateY(-30deg);
+    scale: 97%
+}50%{ 
+    left: 5%;
+    bottom: -18px;
+    transform: rotateY(25deg);
+}75%{ 
+    top:-5px;
+    transform: rotateY(-30deg);
+}100%{
+    left: 25%; top: 9px;
+}}
+
+
+#purp_fish-box{
+  right: 40%;
+  top: 40%;
+} 
+
+#purp_fish{
+  position: relative;
+    animation: purpfishmove 10s  ease-in-out infinite;  
+}
+
+
+@keyframes purpfishmove {
+  0% {
+    transform: translateX(20%) rotateY(0);
+   
+  }
+  30% {
+    transform: translateX(400px) rotateY(0);
+    
+  }
+  50% {
+    transform: translateX(400px) rotateY(180deg);
+   
+  }
+  80% {
+    transform: translateX(20%) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(20%) rotateY(360deg);
+  }
+}
+
+
+
+/* forward transform backwards */
+#babycrab-box{
+  left: 22%;
+  top: 88%;
+  
+}
+
+#babycrab{
+  position: relative;
+    animation: crab_animation 8s infinite reverse backwards;
+    width: 15%;
+}
+#crab-box{
+  left: 30%;
+  top: 84%;
+}
+
+#crab{
+
+  position: relative;
+    animation: crab_animation 6s infinite;
+    width: 25%;
+}
+
+@keyframes crab_animation{
+  0%{ transform: rotate(-4deg);
+     left: 20%;
+      top: 35%;
+  }5%{transform: rotate(4deg);
+  }10%{transform: rotate(-4deg);
+  }15%{transform: rotate(4deg);
+  }20%{transform: rotate(-4deg);
+  }25%{transform: rotate(4deg)rotateY(-20deg);
+        left: 25%;
+        scale: 80%;     
+  }30%{ transform: rotate(-5deg);
+  }35%{ transform: rotate(5deg);
+  }45%{ transform: rotate(-5deg);
+  }50%{ transform: rotate(5deg);
+  }55%{  transform: rotate(-5deg);
+  }60%{  transform: rotate(5deg) rotateY(-30deg);
+      left: 60%;
+      bottom: 7%;
+  }65%{  transform: rotate(-5deg);
+  }70%{ transform: rotate(5deg);
+  }75%{ transform: rotate(-5deg) rotateY(-15deg);
+      left: 20%;
+      top:-5%; 
+      scale:70%
+  }80%{  transform: rotate(5deg)
+  }85%{  transform: rotate(-4deg);
+  }90%{  transform: rotate(4deg) 
+  }95%{  transform: rotate(-4deg); 
+  }100%{ transform: rotate(5deg);
+      left: 20%; 
+      top: 35%;
+        
+}
+}
+
+#bubbles-box{
+  right: 30%;
+  bottom:  0%;
+   height: 100%;
+  z-index: 1;
+}
+/* test forward to start several animations */
+#bubbles11{
+  position: relative;
+  animation: rising_bubbles 12s  infinite ease-in;
+  transform:rotate(120deg);
+  opacity: 0;
+}
+#bubbles22{
+  position: relative;
+  animation: rising_bubbles 12s  infinite ease-in;
+  transform:rotate(100deg);
+  animation-delay: 8s;
+  opacity: 0;
+  left: 75%;
+}
+#bubbles33{
+  position: relative;
+  animation: rising_bubbles 10s  infinite ease-in;
+  transform:rotate(120deg);
+  animation-delay: 2s;
+  opacity: 0;
+}
+#bubbles44{
+  left: 110%;
+  position: relative;
+  animation: rising_bubbles 12s  infinite ease-in;
+  transform:rotate(90deg);
+  animation-delay: 5s;
+  opacity: 0;
+}
+#bubbles55{
+  left: 250%;
+  position: relative;
+  animation: rising_bubbles 11s  infinite ease-in;
+  transform:rotate(120deg);
+  animation-delay: 11s;
+  opacity: 0;
+}
+#bubbles66{
+  right: 180%;
+  position: relative;
+  animation: rising_bubbles 12s  infinite ease-in;
+  transform:rotate(100deg);
+  animation-delay: 9s;
+  opacity: 0;
+}
+
+@keyframes rising_bubbles{
+  100%{
+    bottom: 10%;
+    opacity: 100;
+    transform: translatez(500px);
+  }0%{
+      scale: 20%;
+       bottom: -105%;
+           }
+}
+
+
+#bubbles2-box{
+    left: 5%;
+  bottom:  0%;
+   height: 100%;
+  z-index: 1;
+  overflow: visible;
+ 
+}
+
+#bubbles2{
+  position: relative;
+  animation: rising_bubbles 13s  infinite ease-in;
+  animation-delay: 3s;
+  opacity: 0;
+  left: 500%
+  
+}
+#bubbles3{
+  position: relative;
+  animation: rising_bubbles 12s  infinite ease-in;
+  animation-delay: 7s;
+  opacity: 0;
+  transform:rotate(100deg);
+}
+#bubbles4{
+    position: relative;
+    animation: rising_bubbles 13s  infinite ease-in;
+    animation-delay: 8s;
+    left: 80%;
+    opacity: 0;
+}  
+#bubbles5{
+  position: relative;
+  animation: rising_bubbles 13s  infinite ease-in;
+  animation-delay: 9;
+  left: 550%;
+  opacity: 0;
+  transform:rotate(180deg);
+}  
+#bubbles6{
+  position: relative;
+  animation: rising_bubbles 11s  infinite ease-in;
+  animation-delay: 2s;
+  left: 10%;
+  opacity: 0;
+}  
+
+
+
+
+.shark {
+  position: relative;
+  width: 3%;
+
+
+}
